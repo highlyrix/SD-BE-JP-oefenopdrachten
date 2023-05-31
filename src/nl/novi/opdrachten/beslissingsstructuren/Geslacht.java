@@ -1,5 +1,6 @@
 package nl.novi.opdrachten.beslissingsstructuren;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Geslacht {
@@ -19,6 +20,15 @@ public class Geslacht {
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
 
+        if (Objects.equals(geslacht, "man")) {
+            System.out.println("Dag meneer");
+        } else if (Objects.equals(geslacht, "vrouw")) {
+            System.out.println("Dag mevrouw.");
+        } else {
+            System.out.println("Dag persoon.");
+        }
     }
+
+
 
 }
